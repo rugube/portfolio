@@ -13,8 +13,19 @@ function App() {
       setMousePosition({ x, y });
     };
 
+    const handleScroll = () => {
+      const winScroll = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      setScrollProgress(scrolled);
+    };
+
     window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const scrollToSkills = () => {
@@ -49,6 +60,14 @@ function App() {
           }`}
         </script>
       </Helmet>
+
+      {/* Progress bar */}
+      <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
+        <div 
+          className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-150"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
 
       <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-blue-500/30 selection:text-white">
         <main>
