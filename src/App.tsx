@@ -71,7 +71,7 @@ function App() {
 
       <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-blue-500/30 selection:text-white">
         <main>
-          <header className="min-h-[80vh] md:min-h-screen flex flex-col justify-start pt-16 px-2 sm:px-3 lg:px-4 relative overflow-visible pb-16">
+          <header className="min-h-[80vh] md:min-h-screen flex flex-col justify-start pt-8 md:pt-16 px-2 sm:px-3 lg:px-4 relative overflow-visible pb-16">
             {/* Background effects contained within header */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:14px_24px] animate-pulse opacity-40" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_100%_200px,#3b82f630,transparent)] animate-pulse [animation-delay:200ms]" />
@@ -87,7 +87,7 @@ function App() {
             </div>
 
             <div className="max-w-4xl mx-auto relative z-10">
-              <div className="space-y-6 animate-fade-in p-6">
+              <div className="space-y-6 animate-fade-in p-4 sm:p-6">
                 <div className="relative">
                   <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-25"></div>
                   <div className="relative space-y-6 bg-gray-900/90 backdrop-blur-sm p-4 sm:p-8 pb-10 rounded-lg border border-gray-800/50">
@@ -124,8 +124,8 @@ function App() {
               </div>
             </div>
 
-            {/* Enhanced scroll indicator */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            {/* Enhanced scroll indicator - moved outside content div */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20">
               <div 
                 onClick={scrollToSkills}
                 className="p-2.5 bg-gray-800/50 backdrop-blur-sm rounded-full shadow-lg group hover:bg-gray-700/50 transition-colors cursor-pointer"
