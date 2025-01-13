@@ -106,7 +106,7 @@ function App() {
                       <a href="mailto:rrugube69@gmail.com" 
                          className="group flex items-center justify-center sm:justify-start gap-2 px-6 py-3 bg-blue-600/90 backdrop-blur-sm rounded-lg hover:bg-blue-600 transition-all hover:scale-105 hover:gap-3 shadow-lg shadow-blue-500/20">
                         <Mail size={20} className="group-hover:rotate-12 transition-transform" />
-                        <span className="font-medium">Get in touch</span>
+                        <span className="font-medium">Contact</span>
                       </a>
                       <div className="flex gap-3 justify-center sm:justify-start">
                         <a href="https://github.com/rugube" 
