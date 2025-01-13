@@ -135,9 +135,9 @@ function App() {
             </div>
           </header>
 
-          <section id="skills" aria-label="Technical Skills" className="py-8 sm:py-16 px-2 sm:px-3 lg:px-4 relative">
+          <section id="skills" aria-label="Technical Skills" className="py-8 sm:py-16 px-2 sm:px-3 relative">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/5 via-transparent to-transparent opacity-50" />
-            <div className="max-w-4xl mx-auto relative">
+            <div className="max-w-6xl mx-auto relative">
               <h2 className="text-3xl font-bold mb-8 gradient-text">Technical Expertise</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-0">
                 <div className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg mb-4 md:mb-0 max-w-[320px] mx-auto w-full">
@@ -224,9 +224,9 @@ function App() {
             </div>
           </section>
 
-          <section id="services" aria-label="Services" className="py-8 sm:py-16 px-2 sm:px-3 lg:px-4 relative">
+          <section id="services" aria-label="Services" className="py-2 sm:py-8 px-2 sm:px-3 relative">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/5 via-transparent to-transparent opacity-50" />
-            <div className="max-w-4xl mx-auto relative">
+            <div className="max-w-6xl mx-auto relative">
               <h2 className="text-3xl font-bold mb-8 gradient-text">Services</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
@@ -246,7 +246,7 @@ function App() {
                     description: "Robust backend systems using PHP, Node.js, and RESTful APIs."
                   }
                 ].map((service, index) => (
-                  <div key={index} className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg">
+                  <div key={index} className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg max-w-[320px] mx-auto w-full">
                     <div className="p-2.5 bg-blue-600/20 rounded-lg w-fit mb-4 shadow-inner">
                       {service.icon}
                     </div>
