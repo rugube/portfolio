@@ -124,8 +124,8 @@ function App() {
               </div>
             </div>
 
-            {/* Enhanced scroll indicator - moved outside content div */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20">
+            {/* Centered scroll indicator */}
+            <div className="absolute left-0 right-0 bottom-8 flex justify-center items-center animate-bounce z-20">
               <div 
                 onClick={scrollToSkills}
                 className="p-2.5 bg-gray-800/50 backdrop-blur-sm rounded-full shadow-lg group hover:bg-gray-700/50 transition-colors cursor-pointer"
