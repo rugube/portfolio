@@ -135,12 +135,12 @@ function App() {
             </div>
           </header>
 
-          <section id="skills" aria-label="Technical Skills" className="py-16 px-2 sm:px-3 lg:px-4 relative">
+          <section id="skills" aria-label="Technical Skills" className="py-8 sm:py-16 px-2 sm:px-3 lg:px-4 relative">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/5 via-transparent to-transparent opacity-50" />
             <div className="max-w-4xl mx-auto relative">
               <h2 className="text-3xl font-bold mb-8 gradient-text">Technical Expertise</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-                <div className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg">
+                <div className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg mb-4 md:mb-0">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2.5 bg-blue-600/20 rounded-lg shadow-inner">
                       <Code2 className="text-blue-400" size={24} />
@@ -167,7 +167,7 @@ function App() {
                   </ul>
                 </div>
                 
-                <div className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg">
+                <div className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg mb-4 md:mb-0">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2.5 bg-blue-600/20 rounded-lg shadow-inner">
                       <Database className="text-blue-400" size={24} />
@@ -194,7 +194,7 @@ function App() {
                   </ul>
                 </div>
 
-                <div className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg">
+                <div className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg mb-4 md:mb-0">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2.5 bg-blue-600/20 rounded-lg shadow-inner">
                       <Globe className="text-blue-400" size={24} />
@@ -224,7 +224,7 @@ function App() {
             </div>
           </section>
 
-          <section id="services" aria-label="Services" className="py-16 px-2 sm:px-3 lg:px-4 relative">
+          <section id="services" aria-label="Services" className="py-8 sm:py-16 px-2 sm:px-3 lg:px-4 relative">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/5 via-transparent to-transparent opacity-50" />
             <div className="max-w-4xl mx-auto relative">
               <h2 className="text-3xl font-bold mb-8 gradient-text">Services</h2>
