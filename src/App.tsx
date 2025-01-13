@@ -71,7 +71,7 @@ function App() {
 
       <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-blue-500/30 selection:text-white">
         <main>
-          <header className="min-h-screen flex flex-col justify-start pt-16 px-2 sm:px-3 lg:px-4 relative overflow-visible pb-16">
+          <header className="min-h-[80vh] md:min-h-screen flex flex-col justify-start pt-16 px-2 sm:px-3 lg:px-4 relative overflow-visible pb-16">
             {/* Background effects contained within header */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:14px_24px] animate-pulse opacity-40" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_100%_200px,#3b82f630,transparent)] animate-pulse [animation-delay:200ms]" />
@@ -80,37 +80,35 @@ function App() {
 
             {/* Animated shapes contained within header */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float mix-blend-overlay" 
+              <div className="absolute top-1/4 left-1/4 w-48 sm:w-96 h-48 sm:h-96 bg-blue-500/10 rounded-full blur-3xl animate-float mix-blend-overlay" 
                    style={{ transform: `translate(${mousePosition.x * 0.1}px, ${mousePosition.y * 0.1}px)` }} />
-              <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float [animation-delay:1000ms] mix-blend-overlay"
+              <div className="absolute top-1/3 right-1/4 w-48 sm:w-96 h-48 sm:h-96 bg-purple-500/10 rounded-full blur-3xl animate-float [animation-delay:1000ms] mix-blend-overlay"
                    style={{ transform: `translate(${mousePosition.x * -0.1}px, ${mousePosition.y * -0.1}px)` }} />
-              <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-float [animation-delay:2000ms] mix-blend-overlay"
-                   style={{ transform: `translate(${mousePosition.x * 0.05}px, ${mousePosition.y * 0.05}px)` }} />
             </div>
 
             <div className="max-w-4xl mx-auto relative z-10">
               <div className="space-y-6 animate-fade-in p-6">
                 <div className="relative">
                   <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-25"></div>
-                  <div className="relative space-y-6 bg-gray-900/90 backdrop-blur-sm p-8 pb-10 rounded-lg border border-gray-800/50">
+                  <div className="relative space-y-6 bg-gray-900/90 backdrop-blur-sm p-4 sm:p-8 pb-10 rounded-lg border border-gray-800/50">
                     <h2 className="text-lg text-blue-400 font-mono animate-slide-up tracking-wider">Hi, I'm</h2>
-                    <h1 className="text-6xl sm:text-7xl font-bold gradient-text mb-16 animate-slide-up [animation-delay:200ms] hover:scale-[1.02] transition-transform cursor-default leading-[1.1] pb-4">
+                    <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold gradient-text mb-12 animate-slide-up [animation-delay:200ms] hover:scale-[1.02] transition-transform cursor-default leading-[1.1] pb-4">
                       Ronald Rugube
                     </h1>
-                    <h2 className="text-3xl sm:text-4xl text-gray-300 font-semibold animate-slide-up [animation-delay:400ms] tracking-normal">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-300 font-semibold animate-slide-up [animation-delay:400ms] tracking-normal">
                       Fullstack Developer
                     </h2>
-                    <p className="text-lg text-gray-400 max-w-2xl animate-slide-up [animation-delay:600ms] hover:text-gray-300 transition-colors leading-relaxed">
+                    <p className="text-base sm:text-lg text-gray-400 max-w-2xl animate-slide-up [animation-delay:600ms] hover:text-gray-300 transition-colors leading-relaxed">
                       A detail-oriented Fullstack Developer specializing in WordPress and JavaScript ecosystems. With over 4 years of experience crafting dynamic web applications, custom WordPress solutions, and modern React-based interfaces.
                     </p>
                     
-                    <div className="flex gap-4 pt-6 animate-slide-up [animation-delay:800ms]">
+                    <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-slide-up [animation-delay:800ms]">
                       <a href="mailto:rrugube69@gmail.com" 
-                         className="group flex items-center gap-2 px-6 py-3 bg-blue-600/90 backdrop-blur-sm rounded-lg hover:bg-blue-600 transition-all hover:scale-105 hover:gap-3 shadow-lg shadow-blue-500/20">
+                         className="group flex items-center justify-center sm:justify-start gap-2 px-6 py-3 bg-blue-600/90 backdrop-blur-sm rounded-lg hover:bg-blue-600 transition-all hover:scale-105 hover:gap-3 shadow-lg shadow-blue-500/20">
                         <Mail size={20} className="group-hover:rotate-12 transition-transform" />
                         <span className="font-medium">Get in touch</span>
                       </a>
-                      <div className="flex gap-3">
+                      <div className="flex gap-3 justify-center sm:justify-start">
                         <a href="https://github.com/rugube" 
                            className="p-3 bg-gray-800/90 backdrop-blur-sm rounded-lg hover:bg-gray-700 transition-all hover:scale-110 hover:rotate-6 shadow-lg shadow-gray-900/20 group">
                           <Github size={20} className="group-hover:scale-110 transition-transform" />
@@ -141,7 +139,7 @@ function App() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/5 via-transparent to-transparent opacity-50" />
             <div className="max-w-4xl mx-auto relative">
               <h2 className="text-3xl font-bold mb-8 gradient-text">Technical Expertise</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <div className="card-gradient p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-lg">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2.5 bg-blue-600/20 rounded-lg shadow-inner">
@@ -261,10 +259,10 @@ function App() {
           </section>
         </main>
 
-        <footer aria-label="Contact Information" className="py-6 px-2 text-center text-gray-400 border-t border-gray-800/50 backdrop-blur-sm">
-          <p className="hover:text-gray-300 transition-colors">Based in Middlesbrough, England</p>
+        <footer className="py-6 px-4 sm:px-2 text-center text-gray-400 border-t border-gray-800/50 backdrop-blur-sm">
+          <p className="hover:text-gray-300 transition-colors text-sm sm:text-base">Based in Middlesbrough, England</p>
           <a href="mailto:rrugube69@gmail.com" 
-             className="text-blue-400 hover:text-blue-300 transition-colors mt-2 inline-block">
+             className="text-blue-400 hover:text-blue-300 transition-colors mt-2 inline-block text-sm sm:text-base">
             rrugube69@gmail.com
           </a>
         </footer>
